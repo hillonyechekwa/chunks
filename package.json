@@ -5,12 +5,18 @@
   "author": "Hill Onyechekwa",
   "liscense": "MIT",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "npm-run-all sass --parallel watch:*",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "yarn sass -- --watch",
+    "build": "eleventy",
+    "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "sass": "^1.59.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
