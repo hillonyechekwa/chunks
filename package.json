@@ -1,0 +1,16 @@
+{
+  "name": "chunks",
+  "version": "1.0.0",
+  "description": "my developer blog",
+  "author": "Hill Onyechekwa",
+  "liscense": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
+    "sass": "^1.59.3"
+  }
+}
