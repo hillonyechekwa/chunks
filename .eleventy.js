@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig){
 	eleventyConfig.addPassthroughCopy("./src/images/")
 	eleventyConfig.addPassthroughCopy("./src/scripts/")
 	eleventyConfig.addPassthroughCopy({"./src/favicons" : "/"})
+	eleventyConfig.addPassthroughCopy("./src/fonts/")
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`)
 	return{
 	   dir: { input: "src", output: "dist"}
