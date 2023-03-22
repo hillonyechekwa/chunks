@@ -1,0 +1,17 @@
+<article class="post-card">
+    {# add images later on #}
+    <div>
+        <h3><a href={{post.url}} alt={{post.data.title}}>{{post.data.title}}</a></h3>
+        <p>{{post.data.date}}</p>
+    </div>
+    <section class="post-card-body">
+        <nav class="post-card-tag-list">
+            {% for tag in post.data.taglist %}
+                <span class="post-card-tags">{{tag}}</span>
+            {% endfor %}
+        </nav>
+        <article class="post-card-desc">
+            {{post.data.description}}
+        </article>
+    </section>
+</article>

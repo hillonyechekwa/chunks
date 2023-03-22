@@ -1,0 +1,170 @@
+@use './vars';
+@use './globals';
+
+
+
+// post card styles
+
+.post-card{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 3px solid vars.$base-color;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; align-items: center;
+    background-color: #fff;
+    & > div{
+        margin-bottom: 10px;
+    }
+    h3{
+        color: vars.$dark-color;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+
+.post-card > div p{
+    color: vars.$text-color;
+    font-size: .7em;
+}
+
+
+.post-card-body .post-card-tag-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color: vars.$base-color;
+    font-weight: 500;
+}
+
+
+.post-card-desc{
+    font-size: .8em;
+    line-height: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+// single post page styles.
+
+.post{
+    width: 100%;
+}
+
+
+.post #post-data{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;;
+    padding: 20px;
+    position: relative;
+    & > h2{
+        text-align: center;
+        font-size: 3rem;
+        color: vars.$dark-color;
+        max-inline-size: 800px;
+        word-wrap: break-word;
+        font-family: vars.$font;
+    }
+    p{
+        color: vars.$text-color;
+        font-weight: 600;
+    }
+}
+
+#post-tag-list{
+    width:400px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: vars.$base-color;
+    font-weight: 600;
+}
+
+.post-content{
+    padding:  20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: vars.$neutral;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 7px;
+    margin-top: 30px;
+    p{
+        font-family: vars.$font;
+        font-size: 1.12em;
+        margin-bottom: 30px;
+        max-inline-size: 700px;
+        word-wrap: break-word;
+    }
+    h2{
+        font-family: vars.$font;
+        font-size: 1.8rem;
+        color: vars.$base-color;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-family: vars.$font;
+        font-size: 1.4rem;
+        color: vars.$dark-color;
+        margin-bottom: 20px;
+    }
+    iframe{
+        // width: 60%;
+        margin-bottom: 30px;
+    }
+    hr{
+       width: 80%;
+       border: .9px solid vars.$dark-color;
+       margin-bottom: 15px;
+    }
+    pre{
+        margin-bottom: 20px;
+    }
+    a{
+        color: vars.$base-color;
+    }
+}
+
+
+//posts page
+
+.posts-wrapper{
+    display: grid;
+    place-items: center;
+    h2{
+        font-size: 2.5rem;
+        color: vars.$text-color;
+        position: relative;
+        left: -40%;
+        top: 20px;
+        margin-bottom: 40px;
+    }
+    #prev, #next{
+        font-size: 1.9rem;
+        font-weight: 600;;
+    }
+    #next{
+        position: relative;
+        left: 80%;
+    }
+    #prev{
+        position: relative;
+        left: -10%;;
+    }
+}
+
+

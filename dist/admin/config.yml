@@ -1,0 +1,35 @@
+backend:
+  # Settings to use Netlify Identity as backend
+  name: git-gateway
+  branch: main
+
+# Add the route to your images, so Netlify CMS knows where to save uploads to.
+media_folder: "src/images"
+public_folder: "/dist/imgages"
+
+# You can delete my other comments, but it's helpful to leave the following one here so you don't forget how to run your Netlify CMS.
+# If you don't run this command, the CMS will keep giving you errors when you try to login
+##
+# When you want to use Netlify CMS:
+# Run your Eleventy serve commands, (mine is "npm run start")
+# In another terminal window, simultaneously run: "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+
+# Add your collections. Here's an example of multiple collections: 
+collections:
+# First Collection
+  - label: "Blog" 
+    name: "blog"
+    folder: "src/posts" # Where the new posts should be saved to
+    create: true # This allows you to create new instances in the CMS
+    editor:
+      preview: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Hill" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "taglist", widget: list, default: ["post"] }
+      - { label: "Layout", name: "layout", widget: string, default: "post.njk" }
+      - { label: "Body", name: "body", widget: "markdown" }

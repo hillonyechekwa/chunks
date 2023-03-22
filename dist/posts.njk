@@ -1,0 +1,41 @@
+---
+title: 'Chunks_of_Code- all posts'
+layout: base.njk
+pagination: 
+    data: collections.posts
+    size: 4
+    alias: posts
+---
+
+<main class="wrapper posts-wrapper">
+    <h2>All Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li class="post-card" key={{post.data.title}}>
+                <div>
+                    <h3>
+                        <a href={{post.url}} alt={{post.data.title}}> {{post.data.title}}</a>
+                    </h3>
+                    <p>{{post.data.date}}</p>
+                </div>
+                <section class="post-card-body">
+                    <nav class="post-card-tag-list">
+                        {% for tag in post.data.taglist %}
+                            <span class="post-card-tags">{{tag}}</span>
+                        {% endfor %}
+                    </nav>
+                    <article class="post-card-desc">
+                        {{post.data.description}}
+                    </article>
+                </section>
+            </li>
+        {% endfor %}
+    <ul>
+
+        {% if pagination.href.previous  %}
+            <a id="prev" href={{pagination.href.previous}}> previous </a>
+        {% endif %}
+        {% if pagination.href.next  %}
+            <a id="next" href={{pagination.href.next}}> next </a>
+        {% endif %}
+</main>

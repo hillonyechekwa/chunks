@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig){
 	eleventyConfig.addPassthroughCopy("./src/images/")
 	eleventyConfig.addPassthroughCopy("./src/scripts/")
 	eleventyConfig.addPassthroughCopy("./src/prism-shades-of-purple.css")
+	eleventyConfig.addPassthroughCopy("./src/admin/")
 	eleventyConfig.addPassthroughCopy({"./src/favicons" : "/"})
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`)
 	eleventyConfig.addPlugin(syntaxHighlight);
