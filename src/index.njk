@@ -1,4 +1,16 @@
 ---
-title: 'Chunks'
+title: 'Chunks - home'
 layout: 'base.njk'
+
 ---
+
+
+<main class="wrapper index-wrapper">
+    <header>
+        <p>Welcome to chunks, a weekly web development blog with the flexibility to dive into other fun spheres of software development.</p>
+    </header>
+    <h1>Recent Posts</h1>
+    {# need to iterate through the first 6 posts for recent projects #}
+    {% include "post-grid.njk" %}
+    <a href="/posts">check out all my articles</a>
+</main>
