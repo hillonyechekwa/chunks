@@ -7,7 +7,7 @@ layout: base.njk
         <h2>{{title}}</h2>
         <p>{{date}}</p>
         <nav id="post-tag-list">
-            {% for tag in tags %}
+            {% for tag in taglist %}
             <span class="post-tag">{{ tag }}</span>
             {% endfor %}
         </nav>

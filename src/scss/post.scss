@@ -133,6 +133,9 @@
     pre{
         margin-bottom: 20px;
     }
+    a{
+        color: vars.$base-color;
+    }
 }
 
 
@@ -148,6 +151,17 @@
         left: -40%;
         top: 20px;
         margin-bottom: 40px;
+    }
+    #prev, #next{
+        font-size: 1.9rem;
+    }
+    #next{
+        position: relative;
+        left: 80%;
+    }
+    #prev{
+        position: relative;
+        left: -10%;;
     }
 }
 

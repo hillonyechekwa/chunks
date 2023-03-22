@@ -152,6 +152,10 @@ a{
             border-bottom: 2.5px solid vars.$dark-color;
             background: none;
             outline: none;
+            color: #fff;
+            &:focus{
+                border-bottom-color: vars.$link;
+            }
     }
     .form-control input::placeholder{
         color: #fff;
@@ -171,6 +175,10 @@ a{
     border: 2px solid vars.$dark-color;
     border-radius: 5px;
     outline: none;
+    color: #fff;
+    &:focus{
+        border-color: vars.$link;
+    }
 }
 
 .form-wrapper button{

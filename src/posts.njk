@@ -33,9 +33,9 @@ pagination:
     <ul>
 
         {% if pagination.href.previous  %}
-            <a href={{pagination.href.previous}}> previous </a>
+            <a id="prev" href={{pagination.href.previous}}> previous </a>
         {% endif %}
         {% if pagination.href.next  %}
-            <a href={{pagination.href.next}}> next </a>
+            <a id="next" href={{pagination.href.next}}> next </a>
         {% endif %}
 </main>
