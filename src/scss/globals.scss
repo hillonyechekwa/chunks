@@ -130,3 +130,67 @@ a{
         color: vars.$neutral;
     }
 }
+
+//form styles
+.form-wrapper{
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: vars.$base-color;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    .avatar{
+        width: 300px;
+    }
+    .form-control > input{
+            width: 250px;
+            border: none;
+            border-bottom: 2.5px solid vars.$dark-color;
+            background: none;
+            outline: none;
+    }
+    .form-control input::placeholder{
+        color: #fff;
+    }
+}
+
+.form-control{
+    margin-bottom: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.form-control textarea{
+    width: 250px;
+    border: none;
+    background: none;
+    border: 2px solid vars.$dark-color;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-wrapper button{
+    width: 150px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: vars.$dark-color;
+    color: vars.$neutral;
+    transition: background-color .3s ease-out, color .3s ease-out;
+    &:hover{
+        color: vars.$dark-color;
+        background-color: vars.$link;
+    }
+}
+
+.form-wrapper .avatar h2{
+    color: vars.$neutral;
+}
+
+.form-wrapper .avatar img{
+    margin-top: 50px;
+}

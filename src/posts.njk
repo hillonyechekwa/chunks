@@ -3,7 +3,7 @@ title: 'Chunks_of_Code- all posts'
 layout: base.njk
 pagination: 
     data: collections.posts
-    size: 3
+    size: 4
     alias: posts
 ---
 
@@ -31,4 +31,11 @@ pagination:
             </li>
         {% endfor %}
     <ul>
+
+        {% if pagination.href.previous  %}
+            <a href={{pagination.href.previous}}> previous </a>
+        {% endif %}
+        {% if pagination.href.next  %}
+            <a href={{pagination.href.next}}> next </a>
+        {% endif %}
 </main>
