@@ -24,12 +24,13 @@ collections:
     create: true # This allows you to create new instances in the CMS
     editor:
       preview: false
+    slug: {{slug}}
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Hanna" }
+      - { label: "Author", name: "author", widget: "string", default: "Hill" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: list, default: ["post"] }
+      - { label: "Tags", name: "taglist", widget: list, default: ["post"] }
       - { label: "Layout", name: "layout", widget: string, default: "post.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
   ## 

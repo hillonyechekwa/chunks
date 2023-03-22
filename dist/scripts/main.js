@@ -6,7 +6,6 @@ const logo = document.querySelector(".logo")
 let previousScrollPosition = 0
 var throttleWait
 
-console.log(navbar)
 
 logo.onclick = () => {
     window.location.assign('/')
@@ -60,6 +59,7 @@ window.addEventListener("scroll", () => {
         throttle(handleNavScroll, 250)
     }
 })
+
 
 
 

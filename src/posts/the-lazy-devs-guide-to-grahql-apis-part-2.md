@@ -5,6 +5,8 @@ date: '2023-03-20'
 taglist:
     - graphql
     - graphql yoga
+layout: "post.njk"
+author: "Hill"
 --- 
 
 The best way to demo a code post is to display a real life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.

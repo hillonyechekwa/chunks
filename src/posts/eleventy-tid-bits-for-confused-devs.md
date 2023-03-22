@@ -2,9 +2,11 @@
 title: Eleventy tidbits for confused devs (like me).
 description: a look into building dynamic sites with the eleventy framework.
 date: '2023-03-20'
+author: "Hill"
 taglist:
     - jamstack
     - eleventy
+layout: "post.njk"
 --- 
 
 The best way to demo a code post is to display a real life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.
