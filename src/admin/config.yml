@@ -24,7 +24,7 @@ collections:
     create: true # This allows you to create new instances in the CMS
     editor:
       preview: false
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -33,21 +33,3 @@ collections:
       - { label: "Tags", name: "taglist", widget: list, default: ["post"] }
       - { label: "Layout", name: "layout", widget: string, default: "post.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
-  ## 
-  # Visit https://www.netlifycms.org/docs/widgets/ to learn more about what widgets you can use.
-  # Widgets are the data type that field will allow and how the CMS UI will be like for that field , like datetime, number, list of options, boolean, image, code, and more. 
-  ##
-  # Second Collection
-  # It seems to work with or without "" 
-  # - label: Tarot
-  #   name: tarot
-  #   folder: /src/tarot
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: Name, name: name, widget: string }
-  #     - { label: Fortunes, name: fortunes, widget: list }
-  #     - { label: Keywords, name: keywords, widget: list }
-  #     - { label: Meanings, name: meanings, widget: list }
-  #     - { label: Category, name: category, widget: select, options: ["all", "major", "cups", "wands", "swords", "pentacles"]}
