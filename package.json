@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm-run-all sass --parallel watch:*",
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "yarn sass -- --watch",
+    "watch:sass": "npm run sass -- --watch",
     "build": "eleventy",
     "sass": "sass --style=compressed src/scss/styles.scss src/_includes/css/styles.css"
   },
@@ -15,6 +15,8 @@
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "algoliasearch": "^4.17.1",
+    "dotenv": "^16.1.4",
     "highlight.js": "^11.7.0",
     "sass": "^1.59.3"
   },

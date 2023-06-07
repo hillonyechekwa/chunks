@@ -202,3 +202,12 @@ a{
 .form-wrapper .avatar img{
     margin-top: 50px;
 }
+
+#search-input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline-color: vars.$text-color;
+    padding: 5px;
+}

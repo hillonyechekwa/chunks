@@ -13,6 +13,7 @@
         <script src="{{'/scripts/libs/gsap.min.js'}}" defer></script>
         <script src="{{'/scripts/libs/ScrollTrigger.min.js'}}" defer></script>
         <script src="{{'/scripts/main.js'}}" defer></script>
+        <script src="{{'/scripts/clean-blog.js'}}" defer></script>
         <script src="{{'/scripts/animations.js'}}" defer></script>
         <link rel="stylesheet" href="{{'/prism-shades-of-purple.css' | url | safe}}">
         {# <script src="{{'/scripts/animate/MorphSVGPlugin.min.js'}}" defer></script> #}
@@ -25,11 +26,26 @@
 <body>
     {% include "nav.njk" %}
      <main class="main-content container">
+         {% include "search-result.njk" %}
          {{content | safe}}
      </main>
      {% include "contact.njk" %}
      {% include "footer.njk" %}
      {% block scripts %}
+        <!-- search only version -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
+          integrity="sha256-F7emIId74fYoGrHzsnu3iClRHIbBMhMCbxDoA1cfMAY="
+          crossorigin="anonymous"
+        ></script>
+
+        <!-- default version -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.1/dist/algoliasearch.umd.js"
+          integrity="sha256-akfAZ4+oz0QZ/9Ij/btqYabueam+0owNNQSpyl+0Z+E="
+          crossorigin="anonymous"
+        ></script>
+
      {% endblock %}
  </body>
  
