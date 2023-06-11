@@ -5,7 +5,8 @@
   "author": "Hill Onyechekwa",
   "liscense": "MIT",
   "scripts": {
-    "start": "ntl dev && npm-run-all sass --parallel watch:*",
+    "dev": "npm-run-all sass --parallel watch:*",
+    "dev:ntl": "ntl dev && npm-run-all sass --parallel watch:*",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "build": "eleventy",
